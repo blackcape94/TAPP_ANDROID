@@ -15,8 +15,8 @@ import android.widget.Toast;
 
 public class Settings extends ListActivity {
 
-	static final String[] Options = new String[] { "Account", "Bank accounts",
-			"Transaction history", "Notifications"};
+	static final String[] Options = new String[] { "Account", "Bank Accounts",
+			"Transaction History", "Notifications"};
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -34,11 +34,11 @@ public class Settings extends ListActivity {
 		String selectedValue = (String) getListAdapter().getItem(position);
 		String notify = getListAdapter().getItem(position) + " selected";
 		
-		if (selectedValue.equals("Transaction history")){
+		if (selectedValue.equals("Transaction History")){
 			selectedValue = "TransactionHistory";
 		}
 		
-		if (selectedValue.equals("Bank accounts")){
+		if (selectedValue.equals("Bank Accounts")){
 			selectedValue = "BankAccounts";
 		}
 		
@@ -83,9 +83,9 @@ public class Settings extends ListActivity {
 
             if (s.equals("Account")) {
                 imageView.setImageResource(R.mipmap.account_img);
-            } else if (s.equals("Bank accounts")) {
+            } else if (s.equals("Bank Accounts")) {
                 imageView.setImageResource(R.mipmap.bankaccs_img);
-            } else if (s.equals("Transaction history")) {
+            } else if (s.equals("Transaction History")) {
                 imageView.setImageResource(R.mipmap.transaction_img);
             } else {
                 imageView.setImageResource(R.mipmap.notifications_img);

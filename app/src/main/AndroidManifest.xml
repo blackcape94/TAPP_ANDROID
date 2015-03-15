@@ -8,8 +8,10 @@
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.READ_PROFILE" />
 
-    <application android:allowBackup="true" android:label="@string/app_name"
-        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/tappicon"
+        android:theme="@style/AppTheme">
 
         <activity
             android:name="com.rapda.tappalpha.Splash"
@@ -58,6 +60,17 @@
             android:label="Settings"
             android:screenOrientation="portrait"
             android:parentActivityName="com.rapda.tappalpha.Tapp">
+        </activity>
+
+        <activity
+            android:name="com.rapda.tappalpha.BankAccounts"
+            android:label="Bank Accounts"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.rapda.tappalpha.Settings">
+            <intent-filter>
+                <action android:name="com.ign.tapp.BANKAACOUNTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
         <activity

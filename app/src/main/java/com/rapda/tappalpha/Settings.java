@@ -32,13 +32,13 @@ public class Settings extends ListActivity {
 		
 		//get selected items
 		String selectedValue = (String) getListAdapter().getItem(position);
-		String notify = (String) getListAdapter().getItem(position) + " selected";
+		String notify = getListAdapter().getItem(position) + " selected";
 		
-		if (selectedValue == "Transaction history"){
+		if (selectedValue.equals("Transaction history")){
 			selectedValue = "TransactionHistory";
 		}
 		
-		if (selectedValue == "Bank accounts"){
+		if (selectedValue.equals("Bank accounts")){
 			selectedValue = "BankAccounts";
 		}
 		
@@ -82,13 +82,13 @@ public class Settings extends ListActivity {
             System.out.println(s);
 
             if (s.equals("Account")) {
-                imageView.setImageResource(android.R.mipmap.account_img);
+                imageView.setImageResource(R.mipmap.account_img);
             } else if (s.equals("Bank accounts")) {
-                imageView.setImageResource(android.R.mipmap.bankaccs_img);
+                imageView.setImageResource(R.mipmap.bankaccs_img);
             } else if (s.equals("Transaction history")) {
-                imageView.setImageResource(android.R.mipmap.transaction_img);
+                imageView.setImageResource(R.mipmap.transaction_img);
             } else {
-                imageView.setImageResource(android.R.mipmap.notifications_img);
+                imageView.setImageResource(R.mipmap.notifications_img);
             }
 
             return rowView;

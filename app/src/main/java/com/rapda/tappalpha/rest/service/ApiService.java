@@ -1,9 +1,10 @@
-package com.tapp.tappstudio.rest.service;
+package com.rapda.tappalpha.rest.service;
 
 import retrofit.Callback;
 import retrofit.http.POST;
 
 /**
+ * ApiService
  * Created by kumarrus on 09-03-2015.
  */
 public interface ApiService {

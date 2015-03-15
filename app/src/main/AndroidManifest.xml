@@ -1,7 +1,86 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rapda.tappalpha">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rapda.tappalpha"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
 
     <application android:allowBackup="true" android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.rapda.tappalpha.Splash"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.rapda.tappalpha.Join"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.rapda.tappalpha.Login"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.rapda.tappalpha.Register"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.rapda.tappalpha.Join">
+        </activity>
+
+        <activity
+            android:name="com.rapda.tappalpha.Tapp"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.rapda.tappalpha.Settings"
+            android:label="Settings"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.rapda.tappalpha.Tapp">
+        </activity>
+
+        <activity
+            android:name="com.rapda.tappalpha.TransactionHistory"
+            android:label="Transaction History"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.rapda.tappalpha.Settings">
+            <intent-filter>
+                <action android:name="com.ign.tapp.TRANSACTIONHISTORY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.rapda.tappalpha.Notifications"
+            android:label="Notification Settings"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.rapda.tappalpha.Settings">
+            <intent-filter>
+                <action android:name="com.ign.tapp.NOTIFICATIONS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
     </application>
 

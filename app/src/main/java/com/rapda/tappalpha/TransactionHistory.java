@@ -3,8 +3,6 @@ package com.rapda.tappalpha;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.ign.tapp1.R;
-
 public class TransactionHistory extends Activity{
 
 	@Override

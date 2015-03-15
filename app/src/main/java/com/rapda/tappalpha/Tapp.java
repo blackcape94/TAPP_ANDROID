@@ -7,7 +7,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.ign.tapp1.R;
 
 public class Tapp extends Activity {
 	

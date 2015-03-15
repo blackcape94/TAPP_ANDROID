@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/classic_login" >
+
+    <EditText
+        android:id="@+id/emailLog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="213dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:textColor="@android:color/white"
+        android:inputType="textEmailAddress"
+        android:background="@null" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/passLog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailLog"
+        android:layout_below="@+id/emailLog"
+        android:layout_marginTop="21dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="@android:color/white"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/login_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:padding="10dip"
+        android:textColor="#e30000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signinButton"
+        android:layout_width="150sp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/passLog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@mipmap/boarder"
+        android:text="Sign in"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <Button
+        android:id="@+id/handRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/signinButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:background="@null"
+        android:text="Not a member? Sign up now"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>

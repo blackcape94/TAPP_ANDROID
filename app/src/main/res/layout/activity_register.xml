@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/classic_login" >
+
+    <TextView
+        android:id="@+id/register_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text=" "
+        android:textColor="@android:color/holo_red_light"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/JoinButton"
+        android:layout_width="150sp"
+        android:layout_height="41sp"
+        android:layout_below="@+id/passReg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@mipmap/boarder"
+        android:text="Join"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/emailReg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/passReg"
+        android:layout_alignLeft="@+id/fullnameReg"
+        android:layout_marginBottom="47dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/fullnameReg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailReg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/passReg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailReg"
+        android:layout_below="@+id/register_error"
+        android:layout_marginTop="220dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/handLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/JoinButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@null"
+        android:gravity="center"
+        android:text="Already a member? Login in now"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

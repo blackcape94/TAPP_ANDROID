@@ -1,4 +1,4 @@
-package com.ign.tapp;
+package com.rapda.tappalpha;
 
 import com.ign.tapp.adapter.SettingsArrayAdapter;
 import android.app.ListActivity;

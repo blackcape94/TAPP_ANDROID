@@ -1,4 +1,4 @@
-package com.ign.tapp;
+package com.rapda.tappalpha;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,7 +15,7 @@ public class Tapp extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tapp);
+		setContentView(R.layout.homescreen);
 		
 		}
 		

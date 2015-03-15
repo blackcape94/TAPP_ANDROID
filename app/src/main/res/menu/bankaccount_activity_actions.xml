@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ign.tapp1.Tapp" >
+
+    <item
+        android:id="@+id/action_add"
+        android:showAsAction="always"
+        android:title="@string/action_settings"
+        android:icon="@drawable/settings_icon"
+        android:orderInCategory="100"/>
+	
+    <item
+        android:id="@+id/action_edit"
+        android:showAsAction="always"
+        android:title="@string/action_settings"
+        android:icon="@drawable/edit_img"
+        android:orderInCategory="100"/>
+    
+    <item
+        android:id="@+id/action_delete"
+        android:showAsAction="always"
+        android:title="@string/action_settings"
+        android:icon="@drawable/delete_img"
+        android:orderInCategory="100"/>
+    
+</menu>

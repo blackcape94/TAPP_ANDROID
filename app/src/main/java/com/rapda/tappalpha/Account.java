@@ -1,6 +1,5 @@
-package com.ign.tapp;
+package com.rapda.tappalpha;
 
-import com.ign.tapp1.R;
 import android.app.Activity;
 import android.os.Bundle;
 
@@ -10,7 +9,6 @@ public class Account extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_account_settings);
 	}
 	
 }

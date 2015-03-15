@@ -1,4 +1,4 @@
-package com.ign.tapp;
+package com.rapda.tappalpha;
 
 import library.DatabaseHandler;
 import library.UserFunctions;

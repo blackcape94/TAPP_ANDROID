@@ -1,4 +1,4 @@
-package com.tapp.tappstudio.rest.service;
+package com.rapda.tappalpha.rest.service;
 
 import android.util.Base64;
 
@@ -14,11 +14,11 @@ import retrofit.converter.GsonConverter;
  * Created by kumarrus on 09-03-2015.
  */
 public class RestClient {
-    private static ApiService REST_API = null;
+    private static com.tapp.tappstudio.rest.service.ApiService REST_API = null;
 
     private RestClient() {}
 
-    public static ApiService api() {
+    public static com.tapp.tappstudio.rest.service.ApiService api() {
         return REST_API;
     }
 
@@ -28,7 +28,7 @@ public class RestClient {
 
     public static void setupRestClient(String username, String password) {
         RestAdapter.Builder builder = new RestAdapter.Builder()
-                .setEndpoint(ApiService.BASE_URL)
+                .setEndpoint(com.rapda.tappstudio.rest.service.ApiService.BASE_URL)
                 .setConverter(new GsonConverter(new Gson()))
                 .setClient(new OkClient(new OkHttpClient()))
                 .setLogLevel(RestAdapter.LogLevel.FULL);
@@ -50,6 +50,6 @@ public class RestClient {
         }
 
         RestAdapter restAdapter = builder.build();
-        REST_API = restAdapter.create(ApiService.class);
+        REST_API = restAdapter.create(com.tapp.tappstudio.rest.service.ApiService.class);
     }
 }

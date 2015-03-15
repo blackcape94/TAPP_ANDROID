@@ -1,4 +1,4 @@
-package com.tapp.tappstudio.rest.models;
+package com.rapda.tappalpha.rest.models;
 
 /**
  * Created by kumarrus on 09-03-2015.

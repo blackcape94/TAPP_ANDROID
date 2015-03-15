@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Join extends Activity{
+public class Join extends Activity {
 	
 	Button Login;
 	Button Register;

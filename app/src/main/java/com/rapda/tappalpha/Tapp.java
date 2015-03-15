@@ -1,4 +1,4 @@
-package com.ign.tapp;
+package com.rapda.tappalpha;
 
 import android.app.Activity;
 import android.content.Intent;

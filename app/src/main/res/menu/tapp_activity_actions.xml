@@ -4,10 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_search"
         app:showAsAction="always"
         android:title="@string/action_settings"
-        android:icon="@mipmap/settings_icon"
+        android:icon="@mipmap/action_search"
         android:orderInCategory="100"/>
 
     

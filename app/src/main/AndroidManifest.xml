@@ -52,7 +52,13 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:mimeType="text/plain"/>
             </intent-filter>
+        </activity>
 
+        <activity
+            android:name="com.rapda.tappalpha.Account"
+            android:label="Account"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.rapda.tappalpha.Tapp">
         </activity>
 
         <activity
@@ -86,6 +92,17 @@
 
         <activity
             android:name="com.rapda.tappalpha.Notifications"
+            android:label="Notification Settings"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.rapda.tappalpha.Settings">
+            <intent-filter>
+                <action android:name="com.ign.tapp.NOTIFICATIONS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.rapda.tappalpha.Help"
             android:label="Notification Settings"
             android:screenOrientation="portrait"
             android:parentActivityName="com.rapda.tappalpha.Settings">

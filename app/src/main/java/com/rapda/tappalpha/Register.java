@@ -15,7 +15,8 @@ public class Register extends Activity{
 	Button LoginLink;
 	EditText inputEmail;
 	EditText inputPassword;
-	EditText inputFullName;
+	EditText inputFirstName;
+    EditText inputLastName;
 	TextView registerErrorMsg;
 
 	@Override
@@ -27,13 +28,15 @@ public class Register extends Activity{
 		LoginLink= (Button) findViewById(R.id.handLogin);
 		inputEmail = (EditText) findViewById(R.id.emailReg);
 	    inputPassword = (EditText) findViewById(R.id.passReg);
-	    inputFullName = (EditText) findViewById(R.id.fullnameReg);
+	    inputFirstName = (EditText) findViewById(R.id.firstnameReg);
+        inputFirstName = (EditText) findViewById(R.id.lastnameReg);
 	    registerErrorMsg = (TextView) findViewById(R.id.register_error);
 	    
 	 // Register Button Click event
         btnRegister.setOnClickListener(new View.OnClickListener() {         
             public void onClick(View view) {
-                String name = inputFullName.getText().toString();
+                String Fname = inputFirstName.getText().toString();
+                String Lname = inputLastName.getText().toString();
                 String email = inputEmail.getText().toString();
                 String password = inputPassword.getText().toString();
             }

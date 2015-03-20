@@ -17,70 +17,105 @@
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <Button
-        android:id="@+id/JoinButton"
+        android:id="@+id/SignupButton"
         android:layout_width="150sp"
         android:layout_height="41sp"
-        android:layout_below="@+id/passReg"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp"
         android:background="@mipmap/boarder"
-        android:text="Join"
+        android:text="Sign up"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#ffa4c161" />
+        android:textColor="#ffe6e6e6"
+        android:layout_below="@+id/pinReg"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/emailReg"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/passReg"
-        android:layout_alignLeft="@+id/fullnameReg"
-        android:layout_marginBottom="47dp"
         android:background="@null"
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
-        android:textColor="#ffdedede" />
+        android:textColor="#ffdedede"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <EditText
-        android:id="@+id/fullnameReg"
-        android:layout_width="250dp"
+        android:id="@+id/firstnameReg"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/emailReg"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="21dp"
         android:background="@null"
         android:ems="10"
-        android:hint="Full Name"
+        android:hint="First Name"
         android:inputType="textPersonName"
-        android:textColor="#ffdedede" />
+        android:textColor="#ffdedede"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/emailReg"
+        android:layout_alignLeft="@+id/passReg" />
+
+    <EditText
+        android:id="@+id/lastnameReg"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textColor="#ffdedede"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/emailReg"
+        android:layout_marginLeft="205dp" />
 
     <EditText
         android:id="@+id/passReg"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/emailReg"
-        android:layout_below="@+id/register_error"
-        android:layout_marginTop="220dp"
+        android:layout_below="@+id/emailReg"
+        android:layout_marginTop="10dp"
         android:background="@null"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColor="#ffdedede" >
+        android:textColor="#ffdedede" />
 
-        <requestFocus />
-    </EditText>
+    <EditText
+        android:id="@+id/pinReg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passReg"
+        android:layout_below="@+id/register_error"
+        android:layout_marginTop="260dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Enter PIN"
+        android:inputType="textPassword"
+        android:textColor="#ffdedede" />
+
+    <EditText
+        android:id="@+id/pinReg2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastnameReg"
+        android:layout_below="@+id/register_error"
+        android:layout_marginTop="260dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="Retype PIN"
+        android:inputType="textPassword"
+        android:textColor="#ffdedede" />
 
     <Button
         android:id="@+id/handLogin"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_below="@+id/JoinButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
         android:background="@null"
         android:gravity="center"
         android:text="Already a member? Login in now"
-        android:textColor="#ffa4c161"
-        android:textSize="14sp" />
+        android:textColor="#fff2f2f2"
+        android:textSize="14sp"
+        android:layout_below="@+id/SignupButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

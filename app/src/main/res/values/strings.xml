@@ -4,14 +4,27 @@
     <string name="app_name">TAPP</string>
     <string name="action_settings">Settings</string>
 
-    <string name="account">Account</string>
-    <string name="bank_accounts">Bank Accounts</string>
-    <string name="trans_hist">Transaction History</string>
-    <string name="notif">Notifications</string>
-    <string name="help">Help</string>
+    //Navigation drawer Menu
+    <string-array name="nav_drawer_items">
+        <item>Account</item>
+        <item>Bank Accounts</item>
+        <item>Transaction History</item>
+        <item>Notifications</item>
+        <item>Help</item>
+    </string-array>
 
+    //Item Icons
+    <array name="nav_drawer_icons">
+        <item>@mipmap/account_img</item>
+        <item>@mipmap/bankaccs_img</item>
+        <item>@mipmap/transaction_img</item>
+        <item>@mipmap/notifications_img</item>
+        <item>@mipmap/help_img</item>
+    </array>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="desc_list_item_icon">Item icon</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
 
 </resources>

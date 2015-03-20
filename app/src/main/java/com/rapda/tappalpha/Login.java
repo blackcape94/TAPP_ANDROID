@@ -63,7 +63,7 @@ public class Login extends Activity {
         RegisterBtn.setOnClickListener(new View.OnClickListener() {
  
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Join.class);
+                Intent i = new Intent(getApplicationContext(), Open.class);
                 startActivity(i);
                 finish();
             }

@@ -23,8 +23,8 @@ public class Splash extends Activity {
 				}
 
 				finally {
-                     Intent openJoin = new Intent(getApplicationContext(), Tapp.class);
-                     startActivity(openJoin);
+                     Intent startOpen = new Intent(getApplicationContext(), Open.class);
+                     startActivity(startOpen);
 				}
 			}
 		};

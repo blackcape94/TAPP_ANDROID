@@ -23,7 +23,7 @@ public class Register extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_register);
 		
-		btnRegister= (Button) findViewById(R.id.JoinButton);
+		btnRegister= (Button) findViewById(R.id.SignupButton);
 		LoginLink= (Button) findViewById(R.id.handLogin);
 		inputEmail = (EditText) findViewById(R.id.emailReg);
 	    inputPassword = (EditText) findViewById(R.id.passReg);

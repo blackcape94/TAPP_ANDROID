@@ -23,7 +23,7 @@ public class Open extends Activity {
         Login.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Login.class);
+                Intent i = new Intent(getApplicationContext(), Tapp.class);
                 startActivity(i);
                 finish();
             }

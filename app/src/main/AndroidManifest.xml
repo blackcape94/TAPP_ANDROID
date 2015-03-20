@@ -24,7 +24,7 @@
         </activity>
 
         <activity
-            android:name="com.rapda.tappalpha.Join"
+            android:name="com.rapda.tappalpha.Open"
             android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait">
         </activity>

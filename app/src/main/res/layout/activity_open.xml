@@ -27,26 +27,26 @@
 
     <Button
         android:id="@+id/LoginButton"
-        android:layout_width="90dp"
+        android:layout_width="80dp"
         android:layout_height="35dp"
         android:layout_alignBaseline="@+id/RegisterButton"
         android:layout_alignBottom="@+id/RegisterButton"
         android:layout_alignLeft="@+id/signupWithfb"
         android:background="@mipmap/boarder"
         android:gravity="center"
-        android:text="Sign in"
+        android:text="Login"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/RegisterButton"
-        android:layout_width="150dp"
+        android:layout_width="160dp"
         android:layout_height="35dp"
         android:layout_alignRight="@+id/signupWithfb"
         android:layout_below="@+id/signupWithfb"
         android:layout_marginTop="15dp"
         android:background="@mipmap/boarder"
-        android:text="Join with Email"
+        android:text="Sign up with Email"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:gravity="center"
         android:textColor="@android:color/white" />

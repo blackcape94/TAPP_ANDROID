@@ -32,7 +32,7 @@ public class Login extends Activity {
 
         inputEmail = (EditText) findViewById(R.id.emailLog);
         inputPassword = (EditText) findViewById(R.id.passLog);
-        Signin = (Button) findViewById(R.id.signinButton);
+        Signin = (Button) findViewById(R.id.loginButton);
         RegisterBtn = (Button) findViewById(R.id.handRegister);
         loginErrorMsg = (TextView) findViewById(R.id.login_error);
 

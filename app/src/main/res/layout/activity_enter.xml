@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="fitXY"
+        android:id="@+id/fb_login"
+        android:background="@mipmap/fb_login"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Slyng"
+        android:textSize="60sp"
+        android:id="@+id/enter_header"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#6e6e6e"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter with"
+        android:textSize="20sp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/enter_header"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#7e7e7e"/>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:id="@+id/line"
+        android:background="#d2d2d2"
+        android:layout_below="@+id/fb_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="or"
+        android:id="@+id/or"
+        android:textColor="#7e7e7e"
+        android:background="#f6f6f6"
+        android:layout_below="@+id/fb_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:gravity="center"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="5"
+        android:id="@+id/emailInput"
+        android:hint="Email"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="5"
+        android:id="@+id/passwordInput"
+        android:hint="Password"
+        android:layout_below="@+id/emailInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:id="@+id/emailSignin"
+        android:layout_below="@+id/passwordInput"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign in"
+        android:textSize="18sp"
+        android:textColor="#7e7e7e"
+        android:background="#d6d6d6"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotpass"
+        android:layout_below="@+id/passwordInput"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="forgot password?"
+        android:textColor="#7e7e7e"
+        android:textSize="13sp"
+        android:background="#f6f6f6"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailSignup"
+        android:layout_below="@+id/forgotpass"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign up with Email"
+        android:textColor="#7e7e7e"
+        android:textSize="16sp"
+        android:background="#f6f6f6"
+        />
+
+</RelativeLayout>

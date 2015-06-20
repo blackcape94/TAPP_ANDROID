@@ -62,7 +62,7 @@
             android:id="@+id/profilepic"
             android:layout_marginTop="90dp"
             android:layout_marginLeft="50dp"
-            android:src="@mipmap/tappicon"/>
+            android:src="@mipmap/logo"/>
 
         <TextView
             android:id="@+id/RecipientName"

@@ -10,8 +10,8 @@
 
     <application android:allowBackup="true"
         android:label="@string/app_name"
-        android:icon="@mipmap/tappicon"
-        android:theme="@style/AppTheme">
+        android:icon="@mipmap/logo"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
 
         <activity
             android:name="com.rapda.tappalpha.Splash"
@@ -24,7 +24,7 @@
         </activity>
 
         <activity
-            android:name="com.rapda.tappalpha.Open"
+            android:name="com.rapda.tappalpha.Enter"
             android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait">
         </activity>
@@ -39,7 +39,7 @@
             android:name="com.rapda.tappalpha.Register"
             android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait"
-            android:parentActivityName="com.rapda.tappalpha.Join">
+            android:parentActivityName="com.rapda.tappalpha.Enter">
         </activity>
 
         <activity
@@ -55,61 +55,10 @@
         </activity>
 
         <activity
-            android:name="com.rapda.tappalpha.Account"
-            android:label="Account"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.rapda.tappalpha.Tapp">
-        </activity>
-
-        <activity
             android:name="com.rapda.tappalpha.Settings"
             android:label="Settings"
             android:screenOrientation="portrait"
             android:parentActivityName="com.rapda.tappalpha.Tapp">
-        </activity>
-
-        <activity
-            android:name="com.rapda.tappalpha.BankAccounts"
-            android:label="Bank Accounts"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.rapda.tappalpha.Settings">
-            <intent-filter>
-                <action android:name="com.ign.tapp.BANKAACOUNTS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.rapda.tappalpha.TransactionHistory"
-            android:label="Transaction History"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.rapda.tappalpha.Settings">
-            <intent-filter>
-                <action android:name="com.ign.tapp.TRANSACTIONHISTORY" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.rapda.tappalpha.Notifications"
-            android:label="Notification Settings"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.rapda.tappalpha.Settings">
-            <intent-filter>
-                <action android:name="com.ign.tapp.NOTIFICATIONS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.rapda.tappalpha.Help"
-            android:label="Notification Settings"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.rapda.tappalpha.Settings">
-            <intent-filter>
-                <action android:name="com.ign.tapp.NOTIFICATIONS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
 
     </application>

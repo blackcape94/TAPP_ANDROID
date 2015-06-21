@@ -70,7 +70,8 @@
         android:hint="Email"
         android:layout_below="@id/line"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:background="#00ffffff"/>
 
     <EditText
         android:layout_width="250dp"
@@ -81,7 +82,8 @@
         android:hint="Password"
         android:layout_below="@+id/emailInput"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="#00ffffff"/>
 
     <Button
         android:layout_width="250dp"
